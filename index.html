@@ -1,46 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Тести на кмітливість і логіку онлайн. Цікаві запитання, корисні для розвитку мислення. Спробуйте свої сили прямо зараз!">
-    <meta name="keywords" content="тести, кмітливість, логічні завдання, онлайн тести, розвиток мислення">
-    <title>Онлайн тести на кмітливість та логіку – Спробуйте прямо зараз</title>
+    <meta name="description" content="Топ фільмів для перегляду: трилери, комедії, сімейні фільми та багато іншого.">
+    <title>Топ фільмів для перегляду</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Онлайн тести на кмітливість</h1>
-        <h2>Перевірте свою логіку та мислення за допомогою наших запитань!</h2>
-    </header>
+    <div class="wrapper">
+        <header>
+            <h1>Топ фільмів для перегляду</h1>
+            <nav>
+                <ul>
+                    <li><button onclick="showGenre('popular')">Популярні фільми</button></li>
+                    <li><button onclick="showGenre('family')">Сімейні фільми</button></li>
+                    <li><button onclick="showGenre('thriller')">Трилери</button></li>
+                    <li><button onclick="showGenre('comedy')">Комедії</button></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <section>
-            <h2>Тестові запитання</h2>
+        <main>
+            <section id="popular" style="display: block;">
+                <h2>Популярні фільми</h2>
+                <article>
+                    <h3>Володар перснів</h3>
+                    <img src="https://i.pinimg.com/736x/63/7d/c4/637dc400b8752c6d658d2e95e17448c0.jpg" alt="Володар перснів">
+                    <p><strong>Дата виходу:</strong> 19 грудня 2001 року</p>
+                    <p>Епічний фентезі-фільм про боротьбу добра і зла.</p>
+                    <p><strong>Цікавий факт:</strong> Актори Братства зробили собі однакові татуювання.</p>
+                    <br>
+                    <iframe src="https://vimeo.com" width="100%" height="360"></iframe>
+                </article>
+            </section>
 
-            <div>
-                <p><strong>Питання 1:</strong> У мене є чотири ноги, але я не можу ходити. Хто я?</p>
-                <button onclick="toggleAnswer('answer1')">Показати відповідь</button>
-                <p class="answer" id="answer1">Це стіл!</p>
-            </div>
+            <section id="family" style="display: none;">
+                <h2>Сімейні фільми</h2>
+                <article>
+                    <h3>Пригоди Паддінгтона</h3>
+                    <img src="https://i.pinimg.com/736x/95/2c/4d/952c4d2c792b17f2cbfdcaa9e4555c82.jpg" alt="Пригоди Паддінгтона">
+                    <p><strong>Дата виходу:</strong> 23 листопада 2014 року</p>
+                    <p>Історія про доброго та ввічливого ведмедика з Перу.</p>
+                    <p><strong>Цікавий факт:</strong> Ведмедик Паддінгтон повністю створений за допомогою комп'ютерної графіки.</p>
+                    <br>
+                    <iframe src="https://vimeo.com" width="100%" height="360"></iframe>
+                </article>
+            </section>
 
-            <div>
-                <p><strong>Питання 2:</strong> Чим більше я беру, тим більше залишаю позаду. Що це?</p>
-                <button onclick="toggleAnswer('answer2')">Показати відповідь</button>
-                <p class="answer" id="answer2">Сліди.</p>
-            </div>
+            <section id="thriller" style="display: none;">
+                <h2>Трилери</h2>
+                <article>
+                    <h3>Початок</h3>
+                    <img src="https://i.pinimg.com/736x/79/19/6b/79196bf9bafecbcf13349a852b29dc83.jpg" alt="Початок">
+                    <p><strong>Дата виходу:</strong> 8 липня 2010 року</p>
+                    <p>Фільм про занурення у світ людських снів та крадіжку таємниць.</p>
+                    <p><strong>Цікавий факт:</strong> Сценарій до цього фільму писався Крістофером Ноланом близько 10 років.</p>
+                    <br>
+                    <iframe src="https://vimeo.com" width="100%" height="360"></iframe>
+                </article>
+            </section>
 
-            <div>
-                <p><strong>Питання 3:</strong> Що падає, але ніколи не піднімається?</p>
-                <button onclick="toggleAnswer('answer3')">Показати відповідь</button>
-                <p class="answer" id="answer3">Дощ.</p>
-            </div>
-        </section>
-    </main>
+            <section id="comedy" style="display: none;">
+                <h2>Комедії</h2>
+                <article>
+                    <h3>Один удома</h3>
+                    <img src="https://i.pinimg.com/736x/47/50/10/475010c28adb6a1fa4d662890031ccaf.jpg" alt="Один удома">
+                    <p><strong>Дата виходу:</strong> 10 листопада 1990 року</p>
+                    <p>Різдвяна комедія про хлопчика, який захищає свій дім.</p>
+                    <p><strong>Цікавий факт:</strong> Фільм тривалий час тримав рекорд як найкасовіша комедія в історії.</p>
+                    <br>
+                    <iframe src="https://vimeo.com" width="100%" height="360" ></iframe>
+                </article>
+            </section>
+        </main>
 
-    <footer>
-        <p>2025 Онлайн тести на кмітливість.</p>
-    </footer>
+        <footer>
+            <p>2025 Топ фільмів для перегляду.</p>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>

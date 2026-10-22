@@ -1,9 +1,4 @@
-function toggleAnswer(id) {
-    const answer = document.getElementById(id);
-
-    if (answer.style.display === 'none' || !answer.style.display) {
-        answer.style.display = 'block';
-    } else {
-        answer.style.display = 'none';
-    }
+function showGenre(id) {
+    document.querySelectorAll('main section').forEach(s => s.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
 }
